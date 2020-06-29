@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="code128bgen",
-    version="0.0.1",
+    version="0.2.0",
     author="Damian Dennis",
     author_email="damiandennis@gmail.com",
     description="Generation of the Code128b barcode",

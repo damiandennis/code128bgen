@@ -16,8 +16,8 @@ python -m pip install code128bgen
 ```python
 from code128bgen import generate_bar_widths, write_barcode_to_image_file, write_barcode_to_image
 
-test_str_unicode = u'12345678ÐEª2345FD'
+test_str_unicode = '12345678ÐEª2345FD'
 bars = generate_bar_widths(test_str_unicode) # generates the bar widths for generating image.
-pil_image = write_barcode_to_image(test_str_unicode, bars) # if you want to manipulation the image with PIL.
-write_barcode_to_image_file(test_str_unicode, bars, 'test.png') # writes out file to specified file name.
+pil_image = write_barcode_to_image(bars) # if you want to manipulation the image with PIL.
+write_barcode_to_image_file(bars, 'test.png') # writes out file to specified file name.
 ```
